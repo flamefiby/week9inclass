@@ -1,4 +1,4 @@
-let requestURL = 'https://leihan.ca/JavaScript/week9inclass/package.json';
+let requestURL = 'https://flamefiby.github.io/week9inclass/package.json';
 //create new XHR object
 let request = new XMLHttpRequest();
 
@@ -30,7 +30,7 @@ function pizzaTypes(jsonObj){
         let ul = document.createElement('ul');
 
         img.setAttribute('src',
-            'https://leihan.ca/JavaScript/week9inclass/assets/' + pizzaTypes[i].image);
+            'https://flamefiby.github.io/week9inclass/assets/' + pizzaTypes[i].image);
         img.setAttribute('alt', pizzaTypes[i].image);
 
         h2.textContent = pizzaTypes[i].name;
@@ -42,7 +42,6 @@ function pizzaTypes(jsonObj){
             listItem.textContent = toppings[j];
             ul.appendChild(listItem);
         }
-
         article.appendChild(img);
         article.appendChild(h2);
         article.appendChild(p1);
